@@ -1,7 +1,5 @@
+# https://visualgo.net/en/sorting
 def bubbleSort(arr):
-    """
-    Return a sorted array in ascending order
-    """
     n = len(arr)
     for i in range(0, n-1):
         swp = False
