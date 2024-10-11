@@ -3,8 +3,8 @@ def x(n):
         return 0
     
     sa = x(n-1)
-    res = n + x(sa)
+    res = n + sa
 
     return res
 
-x(3)
+print(x(4))
