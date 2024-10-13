@@ -1,10 +1,13 @@
-def x(n):
-    if n == 0:
-        return 0
+def fact(n):
+    if n == 1:
+        return 1
     
-    sa = x(n-1)
-    res = n + sa
+    return n * fact(n-1)
+    
+print(fact(4))
 
-    return res
 
-print(x(4))
+def fact(n, idx = 3):
+    if n < 1:
+        return
+    return idx
