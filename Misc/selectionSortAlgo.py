@@ -12,7 +12,6 @@ def selection_sort(lst):
     return lst
 
 # print(selection_sort([7, 5, 2, 8, 1]))
-<<<<<<< HEAD
 print(selection_sort([5, 4, 3, 2, 1]))
 # print(selection_sort([]))
 
@@ -41,7 +40,3 @@ def Selectionsort(arr, lb, start, end):
 
 arr = [100, -1, 10, 9, -21, 6, 0, 1, 2, -15, -10, 1000, -1000, 999]
 print(Selectionsort(arr, lb= 0, start=0, end=len(arr)-1))
-=======
-# print(selection_sort([5, 4, 3, 2, 1]))
-print(selection_sort([]))
->>>>>>> 3412204d1bc860432efe76bfbd07b6ff8eeb3e47

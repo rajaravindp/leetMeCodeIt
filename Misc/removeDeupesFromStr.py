@@ -13,5 +13,4 @@ def remove_duplicates(s):
     #         res += i
     # return res
 
-
-remove_duplicates("programming")
+print(remove_duplicates("programming"))
