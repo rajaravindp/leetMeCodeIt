@@ -1,3 +1,5 @@
+from typing import Optional
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -5,8 +7,18 @@ class ListNode:
 class Solution:
     def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
         slow = head
-        fast = head
-        while fast and fast.next: 
+        fast = head.next
+
+        cnt = 1
+        curr = head
+        while curr and curr.next:
+            cnt += 1
+            curr = curr.next
+
+        while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
-        return slow
+        if cnt % 2 != 0:
+            return slow
+        else:
+            return slow.next
